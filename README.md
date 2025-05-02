@@ -11,7 +11,9 @@ O projeto deve reforçar a prática de Programação Orientada a Objetos (OO), c
 abstração, encapsulamento, validação e separação de responsabilidades
 
 3. Fluxo da Aplicação
+   
 Perguntar ao usuário:
+
 Data mínima e máxima para configuração
 
 Hora mínima e máxima para configuração.
