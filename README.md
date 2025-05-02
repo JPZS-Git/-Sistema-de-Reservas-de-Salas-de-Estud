@@ -12,12 +12,18 @@ abstração, encapsulamento, validação e separação de responsabilidades
 
 3. Fluxo da Aplicação
 Perguntar ao usuário:
-Data mínima e máxima para configuraç
+Data mínima e máxima para configuração
+
 Hora mínima e máxima para configuração.
+
 Criar a instância da configuração.
+
 Após a configuração:
+
 Solicitar dados da reserva: data, hora, descrição da sala e capacidade.
+
 Criar a instância da reserva, validando as informações conforme a configuração.
+
 Mostrar mensagens de sucesso ou de erro, conforme as validações.
 
 ----------------------------------------------------------------------------------------
