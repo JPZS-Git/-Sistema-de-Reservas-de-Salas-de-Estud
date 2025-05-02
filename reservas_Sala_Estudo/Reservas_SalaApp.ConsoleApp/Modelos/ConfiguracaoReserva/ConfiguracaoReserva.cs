@@ -29,21 +29,14 @@ public class ConfiguracaoReserva
         TimeSpan horaMinima, TimeSpan horaMaxima) {
            
           _horaMinima = horaMinima;
-          if(ValidarConfiguracaoDataHora(dataMinima,dataMaxima,horaMinima,horaMaxima))
+          if(!ValidarConfiguracaoDataHora(dataMinima,dataMaxima,horaMinima,horaMaxima))
           {
-            RegistrarDataMinima(dataMinima);
-            RegistrarDataMaxima(dataMaxima);
-            RegistrarHoraMaxima(horaMaxima);
+           throw new ArgumentException(string.Join("\n", ErrosDeValidacao));
           }
           else{
-            RegistrarDataMinima(dataMinima);
-            RegistrarDataMaxima(dataMaxima);
-            RegistrarHoraMaxima(horaMaxima);
-            //ValidarConfiguracaoDataHora(dataMinima,dataMaxima,horaMinima,horaMaxima);
-             //throw new ArgumentException(string.Join("\n", ErrosDeValidacao));
-         //throw new ArgumentException($"Data e/ou Hora informadas, "+
-                 // $"inválidas.\nData mínima: {_dataMinima.ToString("dd/MM/yyyy")}\nData máxima: "+
-                 //$"{_dataMaxima.ToString("dd/MM/yyyy")}\nHora mínima {_horaMinima}\nHora máxima: {_horaMaxima}");
+           _dataMinima = dataMinima;
+           _dataMaxima = dataMaxima;
+           _horaMaxima = horaMaxima;
         }
 
             // if (ValidarCompromisso(dataCompromisso, horaCompromisso)) {
@@ -87,11 +80,14 @@ public class ConfiguracaoReserva
         if (_dataMinima < _dataAtual ) {
              ErrosDeValidacao.Add($"A data {_dataMinima.ToString("dd/MM/yyyy")} precisa ser no mínimo {_dataAtual.ToString("dd/MM/yyyy")}");
         }
-        if (_dataMinima > _dataMaxima ) {
-             ErrosDeValidacao.Add($"A data {_dataMaxima.ToString("dd/MM/yyyy")} precisa ser no minimo {_dataMinima.ToString("dd/MM/yyyy")}");
+        if (_dataMaxima < _dataMinima || _dataMaxima <= _dataAtual ) {
+            if(_dataMaxima < _dataMinima)
+             { ErrosDeValidacao.Add($"A data Máxima {_dataMaxima.ToString("dd/MM/yyyy")}, precisa ser no minimo {_dataMinima.ToString("dd/MM/yyyy")}"); }
+             else
+             { ErrosDeValidacao.Add($"A data Máxima {_dataMaxima.ToString("dd/MM/yyyy")}, precisa ser depois de {_dataAtual.ToString("dd/MM/yyyy")}"); }
         }
         if(_horaMaxima < _horaMinima){
-             ErrosDeValidacao.Add($"A hora {_horaMaxima} precisa ser acima de  {_horaMinima}");
+             ErrosDeValidacao.Add($"A hora {_horaMaxima:hh\\:mm} precisa ser acima de  {_horaMinima:hh\\:mm}");
         }
         return ErrosDeValidacao.Count == 0;
 
@@ -112,7 +108,7 @@ public class ConfiguracaoReserva
 
     public override string ToString()
     {
-        return  $"Data Minima: {_dataMinima.ToString("dd/MM/yyyy")}\nData Maxima: {_dataMaxima.ToString("dd/MM/yyyy")}\nHora Minima: {_horaMinima}\nHora Maxima: {_horaMaxima}";
+        return  $"Data Minima: {_dataMinima.ToString("dd/MM/yyyy")}\nData Maxima: {_dataMaxima.ToString("dd/MM/yyyy")}\nHora Minima: {_horaMinima:hh\\:mm}\nHora Maxima: {_horaMaxima:hh\\:mm}";
                 
     }
 }
