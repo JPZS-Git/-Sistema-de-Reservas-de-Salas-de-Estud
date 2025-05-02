@@ -32,7 +32,9 @@ para isso deve analisar as seguintes condições.
 Dentro da classe ConfiguraçãoReserva:
 
 1 - Se a data minima é maior que a data atual.
+
 2 - Se a data máxima é maior que a data atual, e a data mínima.
+
 3 - Se a hora máxima é maior que a hora mínima.
 
 No main apenas fazemos a validação da configuração da reserva:
@@ -45,10 +47,16 @@ No main apenas fazemos a validação da configuração da reserva:
  depois chamamos o construtor da classe Reserva, passando o objeto configuracaoReserva, e fazemos a checagem na classe Reserva.
 
  Dentro da classe Reserva:
+ 
  1 - Se a data está dentro do intervalo definido.
+ 
  2 - Se o horário está dentro do intervalo definido.
+ 
  3 - Se a capacidade da sala está entre é maior que 0 e menor que 40.
+ 
 
  *-* Pontos a ressaltar: 
+ 
  Na tipagem dos atributos, poderia-se usar qualquer um, assim como a nulabilidade das variáveis.
+ 
  As mensagens vem em uma lista, poderia fazer a apresentação dos erros no final.
