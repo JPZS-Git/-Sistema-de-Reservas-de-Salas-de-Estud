@@ -30,6 +30,7 @@ possa ocorrer a validação sobre as regras de negócio, o que é feito pelos m�
 para isso deve analisar as seguintes condições.
 
 Dentro da classe ConfiguraçãoReserva:
+
 1 - Se a data minima é maior que a data atual.
 2 - Se a data máxima é maior que a data atual, e a data mínima.
 3 - Se a hora máxima é maior que a hora mínima.
