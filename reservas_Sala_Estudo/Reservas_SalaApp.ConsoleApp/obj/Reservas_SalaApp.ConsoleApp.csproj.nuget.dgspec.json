@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joaop\\GitHub\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj": {}
+    "C:\\Users\\joaop\\GitHub\\Sistema-de-Reservas-de-Salas-de-Estudo\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joaop\\GitHub\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj": {
+    "C:\\Users\\joaop\\GitHub\\Sistema-de-Reservas-de-Salas-de-Estudo\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joaop\\GitHub\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\joaop\\GitHub\\Sistema-de-Reservas-de-Salas-de-Estudo\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj",
         "projectName": "Reservas_SalaApp.ConsoleApp",
-        "projectPath": "C:\\Users\\joaop\\GitHub\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\joaop\\GitHub\\Sistema-de-Reservas-de-Salas-de-Estudo\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\Reservas_SalaApp.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\joaop\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joaop\\GitHub\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\obj\\",
+        "outputPath": "C:\\Users\\joaop\\GitHub\\Sistema-de-Reservas-de-Salas-de-Estudo\\reservas_Sala_Estudo\\Reservas_SalaApp.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joaop\\AppData\\Roaming\\NuGet\\NuGet.Config"
